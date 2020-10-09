@@ -13,6 +13,8 @@ router.get('/', function (req, res, next) {
     res.send(birdData);
 });
 
-
+router.get('/create', function (req, res, next) {
+    res.render('birds/create');
+});
 
 module.exports = router;

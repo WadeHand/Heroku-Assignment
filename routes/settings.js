@@ -18,5 +18,12 @@ router.get('/food-types', function (req, res, next) {
     res.render('settings/foodtypes');
 });
 
+router.get('/bob', function (req, res, next) {
+    res.render('settings/bob');
+});
+
+router.get('/create', function (req, res, next) {
+    res.render('settings/create');
+});
 
 module.exports = router;
