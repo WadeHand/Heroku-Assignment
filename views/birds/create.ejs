@@ -21,18 +21,23 @@
     <h2>Create a new bird entry:</h2> 
 
     <form method="POST" action="/birds/create"> 
-    <input type="text" value="Species" name="content"/> 
-    <br>
-    <br>
-    <input type="text" value="Nickname" name="content"/>  
-    <br>
-    <br>
-    <input type="text" value="Status" name="content"/>    
-    <br>
-    <br> 
-    <button type="button" class="btn btn-primary">Submit</button>
+      <div  class="form-group col-4">
+        <input type="text" class="form-control" id="Species" placeholder="Species" name="Species"/> 
+        <br>
+      </div>
+      <div  class="form-group col-4">
+        <input type="text" class="form-control" id="Nickname" placeholder="Nickname" name="Nickname"/>  
+        <br>
+      </div>
+      <div  class="form-group col-4">
+        <input type="text" class="form-control" id="Status" placeholder="Status" name="Status"/>    
+        <br>
+      </div>
+    
+    <input type="submit" value="Create" class="btn btn-primary"/>
+   
     </form> 
-
+   
  </div>
 
 
